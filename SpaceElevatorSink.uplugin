@@ -1,15 +1,17 @@
 {
 	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.0.0",
-	"FriendlyName": "Space Elevator Resource Sink",
-	"Description": "Makes it so that Space Elevator also serves as the AWESOME Sink",
+	"Version": 0,
+	"VersionName": "0.0.1",
+	"SemVersion": "0.0.1",
+	"GameVersion": ">=416835",
+	"FriendlyName": "Progression Rebalance",
+	"Description": "Rebalances game progression to be more interesting for veteran players. ",
 	"Category": "Modding",
-	"CreatedBy": "AniViRus Productions",
+	"CreatedBy": "Desucrate",
 	"CreatedByURL": "",
 	"DocsURL": "",
 	"MarketplaceURL": "",
-	"SupportURL": "",
+	"SupportURL": "https://github.com/Desucrate/ProgressionRebalance",
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
@@ -19,10 +21,13 @@
 			"Name": "SML",
 			"Enabled": true,
 			"SemVersion": "^3.11.3"
+		},
+		{
+			"Name": "ContentLib",
+			"Enabled": true,
+			"SemVersion": "^1.8.0"
 		}
 	],
-	"SemVersion": "1.0.0",
-	"GameVersion": ">=416835",
 	"Modules": [
 		{
 			"Name": "SpaceElevatorSink",

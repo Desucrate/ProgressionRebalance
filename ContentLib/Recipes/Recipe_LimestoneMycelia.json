@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Recipe.json",
+  "Name": "Lime-Fertilized Mycelia",
+  "Ingredients": [
+    {
+      "Item": "Desc_Stone",
+      "Amount": 24
+    },
+    {
+      "Item": "Desc_Mycelia",
+      "Amount": 1
+    }
+  ],
+  "Products": [
+    {
+      "Item": "Desc_Mycelia", 
+      "Amount": 4
+    }
+  ],
+  "ManufacturingDuration": 12,
+  "ProducedIn": [
+    "Build_AssemblerMk1"
+  ],
+  "UnlockedBy": [
+    "Research_Mycelia_1"
+  ]
+}
