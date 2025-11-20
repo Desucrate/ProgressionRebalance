@@ -6,12 +6,14 @@
 #include "FGSchematicManager.h"
 #include "PRSpaceElevatorSchematicSubsystem.generated.h"
 
+// It would rule if this file would work
+
 /**
  Subsystem taken from AniViRus's resource sink subsystem.
  Stores schematic manager system and modifies behaviour of Space Elevator to make it fill milestones at inputs.
  */
 UCLASS()
-class SPACEELEVATORSCHEMATIC_API PRSpaceElevatorSchematicSubsystem : public AModSubsystem
+class SPACEELEVATORSCHEMATIC_API APRSpaceElevatorSchematicSubsystem : public AModSubsystem
 {
 	GENERATED_BODY()
 public:
@@ -20,7 +22,6 @@ public:
 protected:
 	bool hooksInitialized = false;
 	FDelegateHandle hookHandler;
-	UFUNCTION(BlueprintImplementableEvent)
 	UPROPERTY()
 	AFGSchematicManager* mCachedSchematicManagerSubsystem;
 };

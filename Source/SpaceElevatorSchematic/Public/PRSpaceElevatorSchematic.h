@@ -9,7 +9,7 @@
  * Helper to expose some Buildable properties to blueprints
  */
 UCLASS()
-class SPACEELEVATORSCHEMATIC_API PRSpaceElevatorSchematic : public UBlueprintFunctionLibrary
+class SPACEELEVATORSCHEMATIC_API UPRSpaceElevatorSchematic : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:

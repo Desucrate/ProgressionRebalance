@@ -6,7 +6,7 @@
 #include "Patching/NativeHookManager.h"
 #include "FGFactoryConnectionComponent.h"
 
-void PRSpaceElevatorSchematicSubsystem::BeginPlay()
+void APRSpaceElevatorSchematicSubsystem::BeginPlay()
 {
 	Super::BeginPlay();
 	if (hooksInitialized) return;
@@ -38,7 +38,7 @@ void PRSpaceElevatorSchematicSubsystem::BeginPlay()
 	hooksInitialized = true;
 }
 
-void PRSpaceElevatorSchematicSubsystem::EndPlay(const EEndPlayReason::Type endPlayReason)
+void APRSpaceElevatorSchematicSubsystem::EndPlay(const EEndPlayReason::Type endPlayReason)
 {
 	if (hookHandler.IsValid()) UNSUBSCRIBE_METHOD(AFGBuildableSpaceElevator::Factory_Tick, hookHandler);
 }

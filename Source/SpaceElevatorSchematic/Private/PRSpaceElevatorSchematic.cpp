@@ -1,6 +1,6 @@
 #include "PRSpaceElevatorSchematic.h"
 
-bool PRSpaceElevatorSchematic::BuildableIsDismantled(AFGBuildable* buildable)
+bool UPRSpaceElevatorSchematic::BuildableIsDismantled(AFGBuildable* buildable)
 {
 	return buildable->GetIsDismantled();
 }
