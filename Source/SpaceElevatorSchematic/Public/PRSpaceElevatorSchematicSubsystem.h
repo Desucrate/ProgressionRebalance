@@ -4,6 +4,7 @@
 #include "FGBuildableSpaceElevator.h"
 #include "Subsystem/ModSubsystem.h"
 #include "FGSchematicManager.h"
+#include "AVRPSpaceElevatorSinkSubsystem.generated.h"
 
 /**
  Subsystem taken from AniViRus's resource sink subsystem.
