@@ -1,8 +1,8 @@
 {
 	"FileVersion": 3,
 	"Version": 0,
-	"VersionName": "0.0.1",
-	"SemVersion": "0.0.1",
+	"VersionName": "0.1.0",
+	"SemVersion": "0.1.0",
 	"GameVersion": ">=416835",
 	"FriendlyName": "Progression Rebalance",
 	"Description": "Rebalances game progression to be more interesting for veteran players. ",
@@ -30,7 +30,7 @@
 	],
 	"Modules": [
 		{
-			"Name": "SpaceElevatorSink",
+			"Name": "SpaceElevatorSchematic",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}

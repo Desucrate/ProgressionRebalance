@@ -1,0 +1,36 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_1-1.Schematic_1-1_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "Name": "this is a test :)",
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_SAM",
+      "Amount": 30
+    },
+    {
+      "Item": "Desc_IronPlateReinforced",
+      "Amount": 30
+    },
+    {
+      "Item": "Desc_Rotor",
+      "Amount": 30
+    },
+    {
+      "Item": "Desc_Motor",
+      "Amount": 30
+    }
+    {
+      "Item": "Desc_Stator",
+      "Amount": 30
+    }
+    {
+      "Item": "Desc_IronPlate",
+      "Amount": 30
+    }
+    {
+      "Item": "Desc_Cable",
+      "Amount": 30
+    }
+  ]
+}
