@@ -11,9 +11,9 @@ void APRSpaceElevatorSchematicSubsystem::BeginPlay()
 	Super::BeginPlay();
 	if (hooksInitialized) return;
 	mCachedSchematicManagerSubsystem = AFGSchematicManager::Get(this);
-	//Hooking
+	// Hooking
 	AFGBuildableSpaceElevator* SpaceElevator = GetMutableDefault<AFGBuildableSpaceElevator>();
-	hookHandler = SUBSCRIBE_METHOD_VIRTUAL_AFTER(AFGBuildableSpaceElevator::Factory_Tick, SpaceElevator, [this](AFGBuildableSpaceElevator* self, float dt)
+	hookHandler = SUBSCRIBE_METHOD_VIRTUAL(AFGBuildableSpaceElevator::Factory_Tick, SpaceElevator, [this](AFGBuildableSpaceElevator* self, float dt)
 		{
 			if (!HasAuthority()) return;
 			
@@ -22,19 +22,19 @@ void APRSpaceElevatorSchematicSubsystem::BeginPlay()
 				if (FactoryConn->IsConnected() && FactoryConn->Factory_PeekOutput(items)) {
 					while (!items.IsEmpty()) {
 						
-						if (mCachedSchematicManagerSubsystem->PayOffOnSchematic(items[0].GetItemClass())) {
+						if (mCachedSchematicManagerSubsystem->PayOffOnSchematic(GetActiveSchematic(), items[0].GetItemClass())) {
 							float offset;
 							FInventoryItem item;
 							FactoryConn->Factory_GrabOutput(item, offset);
 							items.RemoveAt(0);
-							UE_LOGFMT(LogSpaceElevatorSchematic, Verbose, "Item: {Name}", item.GetItemClass().GetDefaultObject()->mDisplayName.ToString());
+							//UE_LOGFMT(LogSpaceElevatorSchematic, Verbose, "Item: {Name}", item.GetItemClass().GetDefaultObject()->mDisplayName.ToString());
 						}
 						else break;
 					}
 				}
 				});
 		});
-	//~Hooking
+	// ~Hooking
 	hooksInitialized = true;
 }
 
