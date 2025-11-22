@@ -26,6 +26,12 @@
 			"Name": "ContentLib",
 			"Enabled": true,
 			"SemVersion": "^1.8.0"
+		},
+		{
+			"Name": "SpaceElevatorSink",
+			"Enabled": true,
+			"Optional": true,
+			"SemVersion": "1.0.0"
 		}
 	],
 	"Modules": [
