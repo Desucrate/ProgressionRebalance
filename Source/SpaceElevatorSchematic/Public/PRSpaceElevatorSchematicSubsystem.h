@@ -23,5 +23,7 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent)
 	TSubclassOf<UFGSchematic> GetActiveSchematic();
 	UPROPERTY()
+	FItemAmount ItemAmount;
+	UPROPERTY()
 	AFGSchematicManager* mCachedSchematicManagerSubsystem;
 };

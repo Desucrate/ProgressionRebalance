@@ -10,32 +10,37 @@ void APRSpaceElevatorSchematicSubsystem::BeginPlay()
 {
 	Super::BeginPlay();
 	if (hooksInitialized) return;
-	mCachedSchematicManagerSubsystem = AFGSchematicManager::Get(this);
-	// Hooking
-	AFGBuildableSpaceElevator* SpaceElevator = GetMutableDefault<AFGBuildableSpaceElevator>();
-	hookHandler = SUBSCRIBE_METHOD_VIRTUAL(AFGBuildableSpaceElevator::Factory_Tick, SpaceElevator, [this](AFGBuildableSpaceElevator* self, float dt)
-		{
-			if (!HasAuthority()) return;
-			
-			TArray<FInventoryItem> items;
-			self->ForEachComponent<UFGFactoryConnectionComponent>(true, [&](UFGFactoryConnectionComponent* FactoryConn) {
-				if (FactoryConn->IsConnected() && FactoryConn->Factory_PeekOutput(items)) {
-					while (!items.IsEmpty()) {
-						
-						if (mCachedSchematicManagerSubsystem->PayOffOnSchematic(GetActiveSchematic(), items[0].GetItemClass())) {
-							float offset;
-							FInventoryItem item;
-							FactoryConn->Factory_GrabOutput(item, offset);
-							items.RemoveAt(0);
-							//UE_LOGFMT(LogSpaceElevatorSchematic, Verbose, "Item: {Name}", item.GetItemClass().GetDefaultObject()->mDisplayName.ToString());
+	if (!WITH_EDITOR) {
+		mCachedSchematicManagerSubsystem = AFGSchematicManager::Get(this);
+		// Hooking
+		AFGBuildableSpaceElevator* SpaceElevator = GetMutableDefault<AFGBuildableSpaceElevator>();
+		// TODO remove _AFTER
+		hookHandler = SUBSCRIBE_METHOD_VIRTUAL_AFTER(AFGBuildableSpaceElevator::Factory_Tick, SpaceElevator, [this](/*auto& scope, */AFGBuildableSpaceElevator* self, float dt)
+			{
+				if (!HasAuthority()) return;
+
+				TArray<FInventoryItem> items;
+				self->ForEachComponent<UFGFactoryConnectionComponent>(true, [&](UFGFactoryConnectionComponent* FactoryConn) {
+					if (FactoryConn->IsConnected() && FactoryConn->Factory_PeekOutput(items)) {
+						while (!items.IsEmpty()) {
+
+
+							TArray<FItemAmount> itemsAmount = { items };
+							if (mCachedSchematicManagerSubsystem->PayOffOnSchematic(GetActiveSchematic(), itemsAmount)) {
+								float offset;
+								FInventoryItem item;
+								FactoryConn->Factory_GrabOutput(item, offset);
+								items.RemoveAt(0);
+								//UE_LOGFMT(LogSpaceElevatorSchematic, Verbose, "Item: {Name}", item.GetItemClass().GetDefaultObject()->mDisplayName.ToString());
+							}
+							else break;
 						}
-						else break;
 					}
-				}
-				});
-		});
-	// ~Hooking
-	hooksInitialized = true;
+					});
+			});
+		// ~Hooking
+		hooksInitialized = true;
+	}
 }
 
 void APRSpaceElevatorSchematicSubsystem::EndPlay(const EEndPlayReason::Type endPlayReason)
