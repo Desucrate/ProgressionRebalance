@@ -19,14 +19,16 @@ void APRSpaceElevatorSchematicSubsystem::BeginPlay()
 			{
 				if (!HasAuthority()) return;
 
+				// Check for items
 				TArray<FInventoryItem> items;
 				self->ForEachComponent<UFGFactoryConnectionComponent>(true, [&](UFGFactoryConnectionComponent* FactoryConn) {
 					if (FactoryConn->IsConnected() && FactoryConn->Factory_PeekOutput(items)) {
 						while (!items.IsEmpty()) {
 
-
-							TArray<FItemAmount> itemsAmount = { items };
-							if (mCachedSchematicManagerSubsystem->PayOffOnSchematic(GetActiveSchematic(), itemsAmount)) {
+							FItemAmount ItemAmount(items[0].GetItemClass(), 1);
+							TArray<FItemAmount> AmountArray;
+							AmountArray.Emplace(ItemAmount);
+							if (mCachedSchematicManagerSubsystem->PayOffOnSchematic(GetActiveSchematic(), AmountArray)) {
 								float offset;
 								FInventoryItem item;
 								FactoryConn->Factory_GrabOutput(item, offset);

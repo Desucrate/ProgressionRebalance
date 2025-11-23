@@ -2,7 +2,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
   "Name": "this is a test :)",
-  "ClearCost": true,
   "Cost": [
     {
       "Item": "Desc_SAM",
@@ -19,18 +18,19 @@
     {
       "Item": "Desc_Motor",
       "Amount": 30
-    }
+    },
     {
       "Item": "Desc_Stator",
       "Amount": 30
-    }
+    },
     {
       "Item": "Desc_IronPlate",
       "Amount": 30
-    }
+    },
     {
       "Item": "Desc_Cable",
       "Amount": 30
     }
-  ]
+  ],
+  "ClearCost": true
 }

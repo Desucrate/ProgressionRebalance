@@ -22,8 +22,11 @@ protected:
 	FDelegateHandle hookHandler;
 	UFUNCTION(BlueprintImplementableEvent)
 	TSubclassOf<UFGSchematic> GetActiveSchematic();
-	UPROPERTY()
-	FItemAmount ItemAmount;
+	//UFUNCTION(BlueprintImplementaleEvent)
+	//bool PayoffOnSchematic();
+	// 
+	//UFUNCTION()
+	//FItemAmount Amount(FInventoryItem Item)
 	UPROPERTY()
 	AFGSchematicManager* mCachedSchematicManagerSubsystem;
 };
