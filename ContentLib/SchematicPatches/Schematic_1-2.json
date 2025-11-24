@@ -1,6 +1,11 @@
-//Game/FactoryGame/Schematics/Progression/Schematic_1-1.Schematic_1-1_C
+//Game/FactoryGame/Schematics/Progression/Schematic_1-2.Schematic_1-2_C
 {
   "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  //"Name": "",
+  //"VisualKit": "",
+  //"Tier": ,
+  "MenuPriority": 2.0,
+  //"Time": 0.0,
   "ClearCost": true,
   "Cost": [
     {
@@ -31,5 +36,7 @@
       "Item": "Desc_Cable",
       "Amount": 30
     }
-  ]
+  ],
+  "ClearRecipes": false,
+  "Recipes": []
 }
