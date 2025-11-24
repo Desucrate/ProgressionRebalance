@@ -14,8 +14,7 @@ void APRSpaceElevatorSchematicSubsystem::BeginPlay()
 		mCachedSchematicManagerSubsystem = AFGSchematicManager::Get(this);
 		// Hooking
 		AFGBuildableSpaceElevator* SpaceElevator = GetMutableDefault<AFGBuildableSpaceElevator>();
-		// TODO remove _AFTER
-		hookHandler = SUBSCRIBE_METHOD_VIRTUAL_AFTER(AFGBuildableSpaceElevator::Factory_Tick, SpaceElevator, [this](/*auto& scope, */AFGBuildableSpaceElevator* self, float dt)
+		hookHandler = SUBSCRIBE_METHOD_VIRTUAL(AFGBuildableSpaceElevator::Factory_Tick, SpaceElevator, [this](auto& scope, AFGBuildableSpaceElevator* self, float dt)
 			{
 				if (!HasAuthority()) return;
 
