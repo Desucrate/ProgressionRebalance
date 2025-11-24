@@ -1,17 +1,17 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "SpaceElevatorSink.h"
+#include "SpaceElevatorSchematic.h"
 
-#define LOCTEXT_NAMESPACE "FSpaceElevatorSinkModule"
+#define LOCTEXT_NAMESPACE "FSpaceElevatorSchematicModule"
 
-DEFINE_LOG_CATEGORY(LogSpaceElevatorSink);
+DEFINE_LOG_CATEGORY(LogProgressionRebalance);
 
-void FSpaceElevatorSinkModule::StartupModule()
+void FSpaceElevatorSchematicModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
 }
 
-void FSpaceElevatorSinkModule::ShutdownModule()
+void FSpaceElevatorSchematicModule::ShutdownModule()
 {
 	// This function may be called during shutdown to clean up your module.  For modules that support dynamic reloading,
 	// we call this function before unloading the module.
@@ -19,4 +19,4 @@ void FSpaceElevatorSinkModule::ShutdownModule()
 
 #undef LOCTEXT_NAMESPACE
 	
-IMPLEMENT_MODULE(FSpaceElevatorSinkModule, SpaceElevatorSink)
+IMPLEMENT_MODULE(FSpaceElevatorSchematicModule, SpaceElevatorSchematic)

@@ -2,9 +2,9 @@ using UnrealBuildTool;
 using System.IO;
 using System;
 
-public class SpaceElevatorSink : ModuleRules
+public class SpaceElevatorSchematic : ModuleRules
 {
-	public SpaceElevatorSink(ReadOnlyTargetRules Target) : base(Target)
+	public SpaceElevatorSchematic(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		CppStandard = CppStandardVersion.Cpp20;

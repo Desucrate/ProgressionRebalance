@@ -8,13 +8,13 @@
     },
     {
       "Item": "Desc_Mycelia",
-      "Amount": 1
+      "Amount": 9
     }
   ],
   "Products": [
     {
       "Item": "Desc_Mycelia", 
-      "Amount": 4
+      "Amount": 12
     }
   ],
   "ManufacturingDuration": 12,
