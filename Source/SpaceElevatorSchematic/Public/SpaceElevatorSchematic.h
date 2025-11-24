@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
-DECLARE_LOG_CATEGORY_EXTERN(LogSpaceElevatorSchematic, Verbose, All);
+DECLARE_LOG_CATEGORY_EXTERN(LogProgressionRebalance, Verbose, All);
 class FSpaceElevatorSchematicModule : public IModuleInterface
 {
 public:

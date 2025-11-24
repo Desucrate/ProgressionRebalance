@@ -20,13 +20,9 @@ public:
 protected:
 	bool hooksInitialized = false;
 	FDelegateHandle hookHandler;
-	UFUNCTION(BlueprintImplementableEvent)
-	TSubclassOf<UFGSchematic> GetActiveSchematic();
-	//UFUNCTION(BlueprintImplementaleEvent)
-	//bool PayoffOnSchematic();
-	// 
-	//UFUNCTION()
-	//FItemAmount Amount(FInventoryItem Item)
+	/** Returns whether the input item is a valid part to pay for the schematic */
+	UFUNCTION()
+	bool IsItemValidForSchematicPayment(TSubclassOf<UFGSchematic> Schematic, FItemAmount ItemAmount);
 	UPROPERTY()
 	AFGSchematicManager* mCachedSchematicManagerSubsystem;
 };

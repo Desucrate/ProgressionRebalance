@@ -4,7 +4,7 @@
 
 #define LOCTEXT_NAMESPACE "FSpaceElevatorSchematicModule"
 
-DEFINE_LOG_CATEGORY(LogSpaceElevatorSchematic);
+DEFINE_LOG_CATEGORY(LogProgressionRebalance);
 
 void FSpaceElevatorSchematicModule::StartupModule()
 {
