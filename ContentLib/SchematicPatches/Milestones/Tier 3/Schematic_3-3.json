@@ -1,0 +1,25 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_3-3.Schematic_3-3_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "MenuPriority": 3,
+  "Time": 600,
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_ModularFrame",
+      "Amount": 100
+    },
+    {
+      "Item": "Desc_Rotor",
+      "Amount": 100
+    },
+    {
+      "Item": "Desc_Cable",
+      "Amount": 500
+    },
+    {
+      "Item": "Desc_IronPlate",
+      "Amount": 1000
+    }
+  ]
+}

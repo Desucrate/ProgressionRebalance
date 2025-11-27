@@ -1,0 +1,6 @@
+//Game/FactoryGame/Schematics/ResourceSink/ResourceSink_PersonnelElevator.ResourceSink_PersonnelElevator_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "ClearDeps": true,
+  "DependsOn": [ "Research_Quartz_1_2_C", "Schematic_3-4_C" ]
+}

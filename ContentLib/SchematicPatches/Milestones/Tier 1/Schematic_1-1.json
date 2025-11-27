@@ -1,0 +1,19 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_1-1.Schematic_1-1_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_Cement",
+      "Amount": 150
+    },
+    {
+      "Item": "Desc_IronPlate",
+      "Amount": 100
+    },
+    {
+      "Item": "Desc_IronRod",
+      "Amount": 100
+    }
+  ]
+}

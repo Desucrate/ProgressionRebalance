@@ -1,0 +1,34 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_4-3.Schematic_4-3_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "MenuPriority": 5,
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_SteelPlateReinforced",
+      "Amount": 75
+    },
+    {
+      "Item": "Desc_SteelPlate",
+      "Amount": 300
+    },
+    {
+      "Item": "Desc_ModularFrame",
+      "Amount": 100
+    },
+    {
+      "Item": "Desc_Cable",
+      "Amount": 500
+    },
+    {
+      "Item": "Desc_Wire",
+      "Amount": 1500
+    },
+    {
+      "Item": "Desc_HighSpeedWire",
+      "Amount": 1000
+    }
+  ],
+  "ClearRecipes": true,
+  "Recipes": [ "Recipe_PowerStorageMk1_C", "Recipe_PowerTowerPlatform_C" ]
+}

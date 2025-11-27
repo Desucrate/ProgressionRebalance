@@ -1,0 +1,23 @@
+//Game/FactoryGame/Recipes/Buildings/Recipe_BlueprintDesigner.Recipe_BlueprintDesigner_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Recipe.json",
+  "ClearIngredients": true,
+  "Ingredients": [
+    {
+      "Item": "Desc_IronRod",
+      "Amount": 150
+    },
+    {
+      "Item": "Desc_IronPlate",
+      "Amount": 100
+    },
+    {
+      "Item": "Desc_Cement",
+      "Amount": 100
+    },
+    {
+      "Item": "Desc_Cable",
+      "Amount": 25
+    }
+  ]
+}

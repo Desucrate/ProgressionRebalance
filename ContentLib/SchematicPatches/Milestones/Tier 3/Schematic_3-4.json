@@ -1,0 +1,26 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_3-4.Schematic_3-4_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "MenuPriority": 2,
+  "Time": 750,
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_ModularFrame",
+      "Amount": 75
+    },
+    {
+      "Item": "Desc_Rotor",
+      "Amount": 100
+    },
+    {
+      "Item": "Desc_Cement",
+      "Amount": 500
+    },
+    {
+      "Item": "Desc_Wire",
+      "Amount": 1000
+    }
+  ],
+  "Recipes": [ "Alternate_AutomatedMiner_C" ]
+}

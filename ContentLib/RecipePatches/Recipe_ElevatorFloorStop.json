@@ -1,0 +1,19 @@
+//Game/FactoryGame/Recipes/Elevator/Recipe_ElevatorFloorStop.Recipe_ElevatorFloorStop_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Recipe.json",
+  "ClearIngredients": true,
+  "Ingredients": [
+    {
+      "Item": "Desc_ModularFrame",
+      "Amount": 2
+    },
+    {
+      "Item": "Desc_Rotor",
+      "Amount": 1
+    },
+    {
+      "Item": "Desc_SteelPlate",
+      "Amount": 5
+    }
+  ]
+}

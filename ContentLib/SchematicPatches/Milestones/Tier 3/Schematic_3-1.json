@@ -1,0 +1,25 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_3-1.Schematic_3-1_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "Time": 900,
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_IronPlateReinforced",
+      "Amount": 250
+    },
+    {
+      "Item": "Desc_Rotor",
+      "Amount": 100
+    },
+    {
+      "Item": "Desc_Cable",
+      "Amount": 750
+    },
+    {
+      "Item": "Desc_CopperSheet",
+      "Amount": 50
+    }
+  ],
+  "Recipes": [ "Recipe_PowerTower_C", "Recipe_PipeSupportStackable_C" ]
+}

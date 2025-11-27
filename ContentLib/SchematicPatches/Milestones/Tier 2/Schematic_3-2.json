@@ -1,0 +1,26 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_3-2.Schematic_3-2_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "Tier": 2,
+  "MenuPriority": 5,
+  "Time": 360,
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_IronPlateReinforced",
+      "Amount": 50
+    },
+    {
+      "Item": "Desc_Cement",
+      "Amount": 200
+    },
+    {
+      "Item": "Desc_IronRod",
+      "Amount": 350
+    },
+    {
+      "Item": "Desc_IronPlate",
+      "Amount": 350
+    }
+  ]
+}

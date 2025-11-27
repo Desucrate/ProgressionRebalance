@@ -1,0 +1,28 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_2-5.Schematic_2-5_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "MenuPriority": 6,
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_Rotor",
+      "Amount": 50
+    },
+    {
+      "Item": "Desc_Cement",
+      "Amount": 500
+    },
+    {
+      "Item": "Desc_Wire",
+      "Amount": 500
+    },
+    {
+      "Item": "Desc_IronRod",
+      "Amount": 300
+    },
+    {
+      "Item": "Desc_IronPlate",
+      "Amount": 300
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_4-5.Schematic_4-5_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "Tier": 2,
+  "MenuPriority": 3,
+  "Time": 180,
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_Wire",
+      "Amount": 300
+    },
+    {
+      "Item": "Desc_IronScrew",
+      "Amount": 300
+    },
+    {
+      "Item": "Desc_IronPlate",
+      "Amount": 100
+    }
+  ]
+}

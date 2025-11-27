@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "Name": "High-Durability Steelworking",
+  "Type": "Milestone",
+  "Tier": 4,
+  "VisualKit": "Kit_ProductionMiner_C",
+  "Category": "SC_Production",
+  "MenuPriority": 3,
+  "Time": 360,
+  "Cost": [
+    {
+      "Item": "Desc_SpaceElevatorPart_2",
+      "Amount": 50
+    },
+    {
+      "Item": "Desc_PortableMiner",
+      "Amount": 100
+    },
+    {
+      "Item": "Desc_SteelPlate",
+      "Amount": 200
+    },
+    {
+      "Item": "Desc_SteelPipe",
+      "Amount": 200
+    },
+    {
+      "Item": "Desc_ModularFrame",
+      "Amount": 150
+    },
+    {
+      "Item": "Desc_Cement",
+      "Amount": 1000
+    }
+  ],
+  "Recipes": [ "Recipe_MinerMk2_C", "Recipe_SteelPlateReinforced_C"]
+}

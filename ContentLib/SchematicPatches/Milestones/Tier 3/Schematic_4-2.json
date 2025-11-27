@@ -1,0 +1,24 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_4-2.Schematic_4-2_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "Time": 450,
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_IronPlateReinforced",
+      "Amount": 200
+    },
+    {
+      "Item": "Desc_IronRod",
+      "Amount": 1000
+    },
+    {
+      "Item": "Desc_Wire",
+      "Amount": 1500
+    },
+    {
+      "Item": "Desc_SpikedRebar",
+      "Amount": 100
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+//Game/FactoryGame/Schematics/Progression/Schematic_4-4.Schematic_4-4_C
+{
+  "$schema": "https://raw.githubusercontent.com/budak7273/ContentLib_Documentation/main/JsonSchemas/CL_Schematic.json",
+  "Time": 420,
+  "MenuPriority": 6,
+  "ClearCost": true,
+  "Cost": [
+    {
+      "Item": "Desc_SteelPlateReinforced",
+      "Amount": 75
+    },
+    {
+      "Item": "Desc_SteelPipe",
+      "Amount": 300
+    },
+    {
+      "Item": "Desc_CopperSheet",
+      "Amount": 500
+    }
+  ]
+}
