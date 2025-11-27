@@ -28,15 +28,21 @@
 			"SemVersion": "^1.8.0"
 		},
 		{
+			"Name": "DynamicProgressionHUD",
+			"Enabled": true,
+			"SemVersion": "1.1.5"
+		},
+		{
 			"Name": "SpaceElevatorSink",
 			"Enabled": true,
 			"Optional": true,
 			"SemVersion": "1.0.0"
 		},
 		{
-			"Name": "DynamicProgressionHUD",
+			"Name": "ProductionBoostPerRecipe",
 			"Enabled": true,
-			"SemVersion": "1.1.5"
+			"Optional": true,
+			"SemVersion": "1.0.0"
 		}
 	],
 	"Modules": [
